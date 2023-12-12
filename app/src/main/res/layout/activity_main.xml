@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/razopay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Razopay Payment"
+        android:textSize="25sp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="30sp"
+        />
+
+    <EditText
+        android:id="@+id/amountEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Enter your Amount"
+        android:layout_marginHorizontal="20dp"
+         android:layout_below="@id/razopay"
+        android:inputType="number"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/paymentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:layout_below="@id/amountEdit"
+        android:layout_marginHorizontal="100sp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Id :- "
+        android:id="@+id/id"
+        android:layout_below="@id/paymentBtn"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="25sp"
+        android:textColor="#D11212"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:layout_below="@id/paymentBtn"
+        android:textSize="18sp"
+        android:layout_marginLeft="150sp"
+        android:layout_marginTop="25sp"
+        />
+
+</RelativeLayout>
